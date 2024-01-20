@@ -10,6 +10,7 @@ const Cube = () => {
 
   return (
     <div>
+      {/* ... your buttons ... */}
       <div className="scene">
         <div className={`cube ${activeFace}`}>
           <div className="cube__face cube__face--front">
@@ -32,7 +33,6 @@ const Cube = () => {
           </div>
         </div>
       </div>
-
       <div className="cube-controls">
         <button onClick={() => setActiveFace("show-front")}>Front</button>
         <button onClick={() => setActiveFace("show-back")}>Back</button>
