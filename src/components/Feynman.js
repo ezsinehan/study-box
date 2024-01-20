@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import '../styles/Feynman.css'
 
-const FeynmanTechnique = () => {
-  const [concept, setConcept] = useState('');
+
+const Feynman= () => {
+  const [subject, setConcept] = useState('');
   const [explanation, setExplanation] = useState('');
   const [feedback, setFeedback] = useState('');
 
-  const handleConceptChange = (event) => {
+  const handleSubjectChange = (event) => {
     setConcept(event.target.value);
   };
 
@@ -21,23 +22,34 @@ const FeynmanTechnique = () => {
   };
 
   return (
-    <div>
-      <h2>Feynman</h2>
+    <div className="feynman-container">
+    <h1>Feynman Technique</h1>
+    <div className="input-group">
+      <label htmlFor="subject">Subject:</label>
       <input
+        id="subject"
         type="text"
-        placeholder="Enter the concept you want to learn"
-        value={concept}
-        onChange={handleConceptChange}
+        placeholder="Enter the subject you want to learn"
+        value={subject}
+        onChange={handleSubjectChange}
       />
+    </div>
+    <div className="input-group">
+      <label htmlFor="explanation">Explanation:</label>
       <textarea
+        id="explanation"
         placeholder="Explain the concept as if you were teaching it to someone else"
         value={explanation}
         onChange={handleExplanationChange}
       />
-      <button className="feynman-btn" onClick={analyzeExplanation}>Analyze Explanation</button>
-      {feedback && <p>Feedback: {feedback}</p>}
     </div>
+    <button className="analyze-btn" onClick={analyzeExplanation}>Analyze Explanation</button>
+    {feedback && <div className="feedback-section">
+      <h2>Feedback:</h2>
+      <p>{feedback}</p>
+    </div>}
+  </div>
   );
 };
 
-export default FeynmanTechnique;
+export default Feynman;
