@@ -18,7 +18,7 @@ const Cube = () => {
             {isFaceActive("front") && "front"}
           </div>
           <div className="cube__face cube__face--back">
-            {isFaceActive("back") && <Feynman />} {/* Render Feynman on front face */}
+            {isFaceActive("back") && "Feynman"} {/* Render Feynman on front face */}
           </div>
           <div className="cube__face cube__face--right">
             {isFaceActive("right") && "right"}

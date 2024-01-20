@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/Feynman.css'
 
 const FeynmanTechnique = () => {
   const [concept, setConcept] = useState('');
@@ -33,7 +34,7 @@ const FeynmanTechnique = () => {
         value={explanation}
         onChange={handleExplanationChange}
       />
-      <button onClick={analyzeExplanation}>Analyze Explanation</button>
+      <button className="feynman-btn" onClick={analyzeExplanation}>Analyze Explanation</button>
       {feedback && <p>Feedback: {feedback}</p>}
     </div>
   );
