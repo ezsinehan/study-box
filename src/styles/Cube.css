@@ -1,0 +1,77 @@
+.scene {
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform 1s;
+}
+
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  line-height: 200px;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+/* Add styles for rotating cube */
+.cube.show-front {
+  transform: translateZ(-100px) rotateY(0deg);
+}
+.cube.show-back {
+  transform: translateZ(-100px) rotateY(-180deg);
+}
+.cube.show-right {
+  transform: translateZ(-100px) rotateY(-90deg);
+}
+.cube.show-left {
+  transform: translateZ(-100px) rotateY(90deg);
+}
+.cube.show-top {
+  transform: translateZ(-100px) rotateX(-90deg);
+}
+.cube.show-bottom {
+  transform: translateZ(-100px) rotateX(90deg);
+}
+
+.cube__face--front {
+  transform: rotateY(0deg) translateZ(100px);
+}
+.cube__face--back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.cube__face--right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.cube__face--left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.cube__face--top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.cube__face--bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+/* Hide text on non-active faces .cube.show-front .cube__face--back,
+.cube.show-right .cube__face--left,
+.cube.show-back .cube__face--front,
+.cube.show-left .cube__face--right,
+.cube.show-top .cube__face--bottom,
+.cube.show-bottom .cube__face--top {
+  opacity: 0;
+}
+
+/* Ensure text on the active face is always visible */
+/* .cube__face {
+  backface-visibility: hidden;
+} */
