@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Cube.css";
+import Feynman from './Feynman';
 
 const Cube = () => {
   const [activeFace, setActiveFace] = useState("");
@@ -16,7 +17,7 @@ const Cube = () => {
             {isFaceActive("front") && "front"}
           </div>
           <div className="cube__face cube__face--back">
-            {isFaceActive("back") && "back"}
+            {isFaceActive("back") && <Feynman />} {/* Render Feynman on front face */}
           </div>
           <div className="cube__face cube__face--right">
             {isFaceActive("right") && "right"}
