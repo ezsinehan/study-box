@@ -4,7 +4,7 @@ import "../styles/Cube.css";
 
 const Cube = () => {
   const navigate = useNavigate();
-  const [activeFace, setActiveFace] = useState("");
+  const [activeFace, setActiveFace] = useState("show-front");
 
   const isFaceActive = (face) => {
     return activeFace === `show-${face}`;
