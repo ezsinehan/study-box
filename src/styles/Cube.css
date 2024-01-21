@@ -1,7 +1,15 @@
+.cube-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .scene {
   width: 500px; /* Larger than original */
   height: 500px; /* Larger than original */
-  perspective: 1500px; /* Adjusted for a larger cube */
+  perspective: 1400px; /* Adjusted for a larger cube */
 }
 
 .cube {
@@ -67,16 +75,16 @@
 /* Styles for buttons (optional) */
 .cube-controls {
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 20px;
 }
 
 .cube-controls button {
   background: none;
   border: none;
   margin-right: 10px;
-  padding: 5px 10px;
+  padding: 5px 12px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: normal;
   text-decoration: none;
   opacity: 0.5;
