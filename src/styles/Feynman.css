@@ -1,4 +1,61 @@
 .feynman-btn {
     padding: 8px 16px;
     font-size: 14px;
-  }
+}
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust based on your layout */
+    position: relative;
+}
+
+.square-loader {
+    width: 20px; /* Reduced size of the square */
+    height: 20px; /* Reduced size of the square */
+    position: relative;
+    border: 3px solid transparent; /* Initially set all borders to transparent */
+    animation: squareLoad 0.7s linear infinite; /* Adjusted duration for smoother transition */
+    border-radius: 0; /* Square corners */
+}
+
+@keyframes squareLoad {
+    0%, 6% {
+        border-top-color: black; /* Darkest */
+        border-right-color: rgba(0, 0, 0, 0.66); /* Medium */
+        border-bottom-color: rgba(0, 0, 0, 0.33); /* Lightest */
+        border-left-color: transparent; /* Transparent */
+    }
+    24%, 30% {
+        border-top-color: transparent; /* Transparent */
+        border-right-color: black; /* Darkest */
+        border-bottom-color: rgba(0, 0, 0, 0.66); /* Medium */
+        border-left-color: rgba(0, 0, 0, 0.33); /* Lightest */
+    }
+    48%, 54% {
+        border-top-color: rgba(0, 0, 0, 0.33); /* Lightest */
+        border-right-color: transparent; /* Transparent */
+        border-bottom-color: black; /* Darkest */
+        border-left-color: rgba(0, 0, 0, 0.66); /* Medium */
+    }
+    72%, 78% {
+        border-top-color: rgba(0, 0, 0, 0.66); /* Medium */
+        border-right-color: rgba(0, 0, 0, 0.33); /* Lightest */
+        border-bottom-color: transparent; /* Transparent */
+        border-left-color: black; /* Darkest */
+    }
+    96%, 100% {
+        border-top-color: black; /* Reset to start state */
+        border-right-color: rgba(0, 0, 0, 0.66); /* Reset to start state */
+        border-bottom-color: rgba(0, 0, 0, 0.33); /* Reset to start state */
+        border-left-color: transparent; /* Reset to start state */
+    }
+}
+.feedback-section {
+    min-height: 200px; /* Adjust based on your needs */
+    max-height: 600px; /* Adjust based on your needs */
+    min-width: 900px;
+    max-width: 900px;
+    overflow-y: auto; /* Adds a scrollbar if the content is too long */
+    margin-bottom: 20px; /* Adds some space below the feedback section */
+}
