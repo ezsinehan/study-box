@@ -46,6 +46,7 @@
   transform: rotateY(-90deg) translateZ(250px);
 }
 .cube__face--top {
+  font-size: 5.25em;
   transform: rotateX(90deg) translateZ(250px);
 }
 .cube__face--bottom {

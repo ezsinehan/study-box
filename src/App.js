@@ -4,6 +4,7 @@ import Cube from "./components/Cube";
 import Feynman from "./components/Feynman";
 import Pomodoro from "./components/Pomodoro";
 import Leitner from "./components/Leitner";
+import Secondbrain from "./components/Secondbrain";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/pomodoro" element={<Pomodoro />} />
           <Route path="/feynman" element={<Feynman />} />
           <Route path="/leitner" element={<Leitner />} />
+          <Route path="/secondbrain" element={<Secondbrain />} />
         </Routes>
       </div>
     </Router>
