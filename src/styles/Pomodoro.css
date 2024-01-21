@@ -1,0 +1,73 @@
+.pomodoro {
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.timer-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Positioning context for absolute children */
+}
+
+.timer-text {
+  position: absolute; /* Position absolutely inside the parent */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to be in the center */
+  font-size: 32px; /* Font size of the timer */
+  z-index: 1; /* Ensure it's above the SVG */
+}
+
+svg {
+  width: 240px; /* Width of the progress bar */
+  height: 240px; /* Height of the progress bar */
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.input-field {
+  margin: 15px 0;
+}
+
+/* Adjustments for the SVG progress bar */
+svg circle {
+  stroke-width: 20;
+}
+
+/* Adjust the size of input fields and buttons */
+.input-field input,
+.buttons-container button {
+  font-size: 15px; /* Larger font for inputs and buttons */
+  padding: 10px; /* Increased padding */
+}
+
+.btn {
+  background: none;
+  border: none;
+  margin-right: 10px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn.active {
+  font-weight: bold;
+  opacity: 1;
+}

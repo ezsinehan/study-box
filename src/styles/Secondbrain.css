@@ -23,11 +23,6 @@
   opacity: 1;
 }
 
-.btn.active {
-  font-weight: bold;
-  opacity: 1;
-}
-
 .task-item {
   margin-bottom: 20px;
   margin-top: 20px;
