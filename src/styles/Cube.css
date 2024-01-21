@@ -36,6 +36,7 @@
 .cube__face--front {
   transform: rotateY(0deg) translateZ(250px);
 }
+
 .cube__face--back {
   transform: rotateY(180deg) translateZ(250px);
 }

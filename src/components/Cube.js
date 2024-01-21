@@ -16,17 +16,17 @@ const Cube = () => {
 
   const descriptions = {
     Studybox:
-      "Studybox is an website system that employs cognitive structuring to categorize and retrieve academic resources efficiently, optimizing your knowledge acquisition process.",
+      "Studybox is an website system that employs cognitive structuring to categorize and retrieve academic resources efficiently, optimizing your knowledge acquisition process. Click Button Of Choice Below",
     Feynman:
-      "The Feynman Technique leverages didactic pedagogy, simplifying and deconstructing sophisticated subjects into fundamental principles for enhanced cognitive assimilation.",
+      "The Feynman Technique leverages didactic pedagogy, simplifying and deconstructing sophisticated subjects into fundamental principles for enhanced cognitive assimilation. Click Cube Face Of Feynman",
     Flashcards:
-      "Flashcards utilize active recall and spaced repetition, two neurologically beneficial methods, for enhancing the retention of discrete pieces of information.",
+      "Flashcards utilize active recall and spaced repetition, two neurologically beneficial methods, for enhancing the retention of discrete pieces of information. Click Cube Face Of Flashcards",
     Pomodoro:
-      "Pomodoro Technique is a time management methodology that employs fixed interval scheduling, optimizing cognitive performance through structured bursts of focused activity.",
+      "Pomodoro Technique is a time management methodology that employs fixed interval scheduling, optimizing cognitive performance through structured bursts of focused activity. Click Cube Face Of Pomodoro",
     SecondBrain:
-      "Second Brain is a digital information management system, functioning as an external cognitive storage device, facilitating efficient information retrieval and mental clarity.",
+      "Second Brain is a digital information management system, functioning as an external cognitive storage device, facilitating efficient information retrieval and mental clarity. Click Cube Face Of SecondBrain",
     Binauralbeats:
-      "Binaural Beats are an auditory processing artifact, stemming from the brain's neural integration of two distinct sound frequencies, which purportedly induces altered states of consciousness.",
+      "Binaural Beats are an auditory processing artifact, stemming from the brain's neural integration of two distinct sound frequencies, which purportedly induces altered states of consciousness. Click Cube Face Of  Binauralbeats",
   };
 
   return (
