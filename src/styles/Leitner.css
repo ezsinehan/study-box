@@ -1,0 +1,42 @@
+.flashcard {
+    perspective: 1000px; /* Depth effect for the flip animation */
+}
+
+.flashcard-inner {
+    position: relative;
+    width: 300px; /* Adjust the width as needed for larger flashcards */
+    height: 300px; /* Adjust the height as needed for larger flashcards */
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background-color: #d6d6d6; /* Background color for the card */
+    border-radius: 10px; /* Rounded corners for the card */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+/* When the card is flipped, rotate it 180 degrees around the Y axis */
+.flashcard.flipped .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front, .flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side of the card when it is not facing the screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Increase font size for readability */
+    color: #ffffff; /* Text color */
+}
+
+.flashcard-back {
+    transform: rotateY(180deg);
+    background-color: #d3d3d3; /* Background color for the back of the card */
+}
+
+/* Adjust button spacing */
+button {
+    margin: 10px; /* Increase or decrease the margin to control spacing */
+}
