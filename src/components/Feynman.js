@@ -69,7 +69,7 @@ const Feynman = () => {
                 <label htmlFor="explanation"></label>
                 <textarea
                     id="explanation"
-                    placeholder="Provide an explanation of the concept as if you were explaining it to a child"
+                    placeholder="Provide an explanation of the concept in your simplest terms"
                     value={explanation}
                     onChange={handleExplanationChange}
                 />
