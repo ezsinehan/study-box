@@ -10,12 +10,6 @@ const Cube = () => {
     return activeFace === `show-${face}`;
   };
 
-  const handleFaceClick = (path) => {
-    if (isFaceActive(path)) {
-      navigate(`/${path}`);
-    }
-  };
-
   return (
     <div>
       {/* ... your buttons ... */}
@@ -27,11 +21,16 @@ const Cube = () => {
           >
             {isFaceActive("front") && "Pomodoro"}
           </div>
-          <div className="cube__face cube__face--back">
+          <div
+            className="cube__face cube__face--back"
+            onClick={() => navigate("/Feynman")}
+          >
             {isFaceActive("back") && "Feynman"}{" "}
-            {/* Render Feynman on front face */}
           </div>
-          <div className="cube__face cube__face--right">
+          <div
+            className="cube__face cube__face--right"
+            onClick={() => navigate("/Leitner")}
+          >
             {isFaceActive("right") && "Leitner"}
           </div>
           <div className="cube__face cube__face--left">
