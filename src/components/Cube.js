@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Cube.css";
+import Dict from "./Cube/Dict";
 
 const Cube = () => {
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ const Cube = () => {
 
   return (
     <div>
+      <Dict />
       <div className="cube-container">
         <div className="scene">
           <div className={`cube ${activeFace}`}>
@@ -49,8 +51,11 @@ const Cube = () => {
             >
               {isFaceActive("top") && "SecondBrain"}
             </div>
-            <div className="cube__face cube__face--bottom">
-              {isFaceActive("bottom") && "bottom"}
+            <div
+              className="cube__face cube__face--bottom"
+              onClick={() => navigate("/binauralbeats")}
+            >
+              {isFaceActive("bottom") && "Binuralbeats"}
             </div>
           </div>
         </div>
@@ -89,7 +94,7 @@ const Cube = () => {
             className={isButtonActive("bottom") ? "active" : ""}
             onClick={() => setActiveFace("show-bottom")}
           >
-            Bottom
+            Binuralbeats
           </button>
         </div>
       </div>
