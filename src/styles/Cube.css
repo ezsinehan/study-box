@@ -26,7 +26,7 @@
   width: 500px; /* Larger than original */
   height: 500px; /* Larger than original */
   border: 1px solid #ccc;
-  line-height: 500px; /* Adjusted for a larger cube */
+  /* line-height: 500px; */
   text-align: center;
   font-size: 6.25em; /* Adjusted for a larger cube */
   /* backface-visibility: hidden; */
@@ -99,4 +99,26 @@
 .cube-controls button.active {
   font-weight: bold;
   opacity: 1;
+}
+
+.cube__face .face-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.cube__face .title {
+  font-size: 70px; /* Adjust font size as needed */
+  font-weight: bold;
+  margin-bottom: 10px; /* Spacing between title and description */
+}
+
+.cube__face .description {
+  font-size: 16px; /* Adjust font size as needed */
+  max-width: 80%; /* Ensures text doesn't go edge to edge */
+  opacity: 0.5;
 }
