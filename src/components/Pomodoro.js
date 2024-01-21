@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "../styles/Pomodoro.css"; // Make sure this path is correct
+import "../styles/Pomodoro.css"; 
+import alarmSound from "../components/button-sound.mp3";
+
 
 export default function Pomodoro() {
   const [minutes, setMinutes] = useState(25);
@@ -9,6 +11,8 @@ export default function Pomodoro() {
   const [shortBreakDuration, setShortBreakDuration] = useState(5);
   const [longBreakDuration, setLongBreakDuration] = useState(15);
   const [currentTimer, setCurrentTimer] = useState("focus");
+  const [playAlarm, setPlayAlarm] = useState(false);
+
 
   useEffect(() => {
     let interval;
@@ -34,7 +38,20 @@ export default function Pomodoro() {
     return () => clearInterval(interval);
   }, [isRunning, seconds, minutes]);
 
-  const progressBarSize = 240; // 1.5x larger than the original size
+
+  useEffect(() => {
+    if (playAlarm) {
+      const audio = new Audio(alarmSound);
+      audio.play();
+  
+      setTimeout(() => {
+        setPlayAlarm(false);
+      }, 5000); // Adjust the timeout accordingly
+    }
+  }, [playAlarm]);
+
+
+  const progressBarSize = 240; 
   const radius = progressBarSize / 2;
   const strokeDasharray = 2 * Math.PI * radius;
 
@@ -162,6 +179,7 @@ export default function Pomodoro() {
           {isRunning ? "Pause" : "Resume"}
         </button>
       </div>
+      <audio id="alarmAudio" src={alarmSound} />
     </div>
   );
 }

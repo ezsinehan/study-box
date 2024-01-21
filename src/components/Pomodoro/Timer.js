@@ -1,4 +1,3 @@
-import CircularProgress from 'react-native-circular-progress-indicator';
 
 
 function Timer(){
