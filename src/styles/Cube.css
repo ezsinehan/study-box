@@ -79,12 +79,14 @@
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
+  opacity: 0.5;
 }
 
 .cube-controls button:hover {
-  text-decoration: underline; /* Optional, for hover effect */
+  opacity: 1;
 }
 
 .cube-controls button.active {
   font-weight: bold;
+  opacity: 1;
 }
