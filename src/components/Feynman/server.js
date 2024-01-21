@@ -28,7 +28,7 @@ app.post('/analyze', async (req, res) => {
                 { role: "system", content: "You are a helpful assistant." },
                 { role: "user", content: `Subject: ${subject}` },
                 { role: "user", content: `Explanation: ${explanation}` },
-                { role: "user", content: "Provide feedback on the explanation as if you were using the Feynman technique." }
+                { role: "user", content: "Provide feedback on the explanation by identifying gaps in their explanation/unclear parts, emulating the feynman theory. The goal is for the user to have a clear and simple explanation. " }
             ],
         });
 
