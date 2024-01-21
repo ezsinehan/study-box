@@ -1,0 +1,44 @@
+.task-item {
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  /* Additional styling */
+}
+
+.btn {
+  background: none;
+  border: none;
+  margin-right: 10px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn.active {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.task-item {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid;
+  opacity: 0.5;
+  /* Solid border with light grey color */
+  padding: 10px; /* Add some padding around the content */
+  border-radius: 4px; /* Optional: rounded corners */
+}
+
+.task-item:hover {
+  opacity: 1;
+  cursor: pointer;
+}

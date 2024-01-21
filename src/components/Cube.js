@@ -43,8 +43,11 @@ const Cube = () => {
             >
               {isFaceActive("left") && "Pomodoro"}
             </div>
-            <div className="cube__face cube__face--top">
-              {isFaceActive("top") && "top"}
+            <div
+              className="cube__face cube__face--top"
+              onClick={() => navigate("/SecondBrain")}
+            >
+              {isFaceActive("top") && "SecondBrain"}
             </div>
             <div className="cube__face cube__face--bottom">
               {isFaceActive("bottom") && "bottom"}
@@ -80,7 +83,7 @@ const Cube = () => {
             className={isButtonActive("top") ? "active" : ""}
             onClick={() => setActiveFace("show-top")}
           >
-            Top
+            SecondBrain
           </button>
           <button
             className={isButtonActive("bottom") ? "active" : ""}
