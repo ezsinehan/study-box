@@ -66,11 +66,25 @@
 
 /* Styles for buttons (optional) */
 .cube-controls {
-  margin-bottom: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .cube-controls button {
+  background: none;
+  border: none;
   margin-right: 10px;
   padding: 5px 10px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.cube-controls button:hover {
+  text-decoration: underline; /* Optional, for hover effect */
+}
+
+.cube-controls button.active {
+  font-weight: bold;
 }

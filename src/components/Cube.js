@@ -10,6 +10,10 @@ const Cube = () => {
     return activeFace === `show-${face}`;
   };
 
+  const isButtonActive = (faceName) => {
+    return activeFace === `show-${faceName}`;
+  };
+
   return (
     <div>
       {/* ... your buttons ... */}
@@ -45,12 +49,42 @@ const Cube = () => {
         </div>
       </div>
       <div className="cube-controls">
-        <button onClick={() => setActiveFace("show-front")}>Pomodoro</button>
-        <button onClick={() => setActiveFace("show-back")}>Feynman</button>
-        <button onClick={() => setActiveFace("show-right")}>Leitner</button>
-        <button onClick={() => setActiveFace("show-left")}>Left</button>
-        <button onClick={() => setActiveFace("show-top")}>Top</button>
-        <button onClick={() => setActiveFace("show-bottom")}>Bottom</button>
+        <button
+          className={isButtonActive("front") ? "active" : ""}
+          onClick={() => setActiveFace("show-front")}
+        >
+          Pomodoro
+        </button>
+        <button
+          className={isButtonActive("back") ? "active" : ""}
+          onClick={() => setActiveFace("show-back")}
+        >
+          Feynman
+        </button>
+        <button
+          className={isButtonActive("right") ? "active" : ""}
+          onClick={() => setActiveFace("show-right")}
+        >
+          Leitner
+        </button>
+        <button
+          className={isButtonActive("left") ? "active" : ""}
+          onClick={() => setActiveFace("show-left")}
+        >
+          Left
+        </button>
+        <button
+          className={isButtonActive("top") ? "active" : ""}
+          onClick={() => setActiveFace("show-top")}
+        >
+          Top
+        </button>
+        <button
+          className={isButtonActive("bottom") ? "active" : ""}
+          onClick={() => setActiveFace("show-bottom")}
+        >
+          Bottom
+        </button>
       </div>
     </div>
   );
