@@ -3,12 +3,12 @@ import '../styles/Feynman.css'
 
 
 const Feynman= () => {
-  const [subject, setConcept] = useState('');
+  const [subject, setSubject] = useState('');
   const [explanation, setExplanation] = useState('');
   const [feedback, setFeedback] = useState('');
 
   const handleSubjectChange = (event) => {
-    setConcept(event.target.value);
+    setSubject(event.target.value);
   };
 
   const handleExplanationChange = (event) => {
