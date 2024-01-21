@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cube from "./components/Cube";
 import Feynman from "./components/Feynman";
 import Pomodoro from "./components/Pomodoro";
+import Leitner from "./components/Leitner";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Route path="/" element={<Cube />} />
           <Route path="/pomodoro" element={<Pomodoro />} />
           <Route path="/feynman" element={<Feynman />} />
-          {/* Add routes for other cube faces here */}
+          <Route path="/leitner" element={<Leitner />} />
         </Routes>
       </div>
     </Router>
