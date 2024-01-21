@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Cube.css";
-import Dict from "./Cube/Dict";
 
 const Cube = () => {
   const navigate = useNavigate();
@@ -17,7 +16,6 @@ const Cube = () => {
 
   return (
     <div>
-      <Dict />
       <div className="cube-container">
         <div className="scene">
           <div className={`cube ${activeFace}`}>
