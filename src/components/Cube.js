@@ -33,9 +33,9 @@ const Cube = () => {
             </div>
             <div
               className="cube__face cube__face--right"
-              onClick={() => navigate("/Leitner")}
+              onClick={() => navigate("/Flashcards")}
             >
-              {isFaceActive("right") && "Leitner"}
+              {isFaceActive("right") && "Flashcards"}
             </div>
             <div
               className="cube__face cube__face--left"
@@ -74,7 +74,7 @@ const Cube = () => {
             className={isButtonActive("right") ? "active" : ""}
             onClick={() => setActiveFace("show-right")}
           >
-            Leitner
+            Flashcards
           </button>
           <button
             className={isButtonActive("left") ? "active" : ""}

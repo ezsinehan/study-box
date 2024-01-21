@@ -20,7 +20,7 @@ function App() {
           <Route path="/" element={<Cube />} />
           <Route path="/pomodoro" element={<Pomodoro />} />
           <Route path="/feynman" element={<Feynman />} />
-          <Route path="/leitner" element={<Leitner />} />
+          <Route path="/flashcards" element={<Leitner />} />
           <Route path="/secondbrain" element={<Secondbrain />} />
           <Route path="/binauralbeats" element={<Binauralbeats />} />
         </Routes>
