@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; /* Adjust based on your layout */
+    height: 100px; /* Adjust based on your layout */
     position: relative;
 }
 
@@ -58,4 +58,60 @@
     max-width: 900px;
     overflow-y: auto; /* Adds a scrollbar if the content is too long */
     margin-bottom: 20px; /* Adds some space below the feedback section */
+}
+
+
+.input-group {
+    margin-bottom: 20px; /* Add some space below each input group */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Make input and textarea fill the container */
+    padding: 10px; /* Add some padding inside the input and textarea */
+    margin-bottom: 10px; /* Add some space below the input and textarea */
+    border: 1px solid black; /* Add a border to the input and textarea */
+    border-radius: 8px; /* Slightly round the corners of the input and textarea */
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #aaa; /* Color for the placeholder text */
+     /* Italicize the placeholder text */
+}
+
+.analyze-btn {
+    padding: 10px 20px; /* Increase padding for a larger button */
+    font-size: 16px; /* Increase font size for better readability */
+    color: black; /* Set text color to black */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid black; /* Add a thin black border */
+    cursor: pointer; /* Change mouse cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+    border-radius: 4px; /* Slightly round the corners */
+}
+
+.analyze-btn:hover {
+    background-color: black; /* Change background to black when hovered */
+    color: white; /* Change text color to highlighted white when hovered */
+    font-weight: normal; /* Keep font weight normal (remove if you prefer bold on hover) */
+}
+.feedback-section {
+    margin-top: 20px; /* Add space above the feedback section */
+    padding: 10px; /* Add padding inside the feedback section */
+    border: none; /* No border for the feedback section */
+}
+.feynman-container {
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #aaa; /* Darker color for better visibility */
+ /* Italicize the placeholder text */
+    font-family: Arial, sans-serif; /* Ensure the font is Arial */
+    font-size: px
 }

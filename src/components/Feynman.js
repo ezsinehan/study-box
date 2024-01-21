@@ -56,20 +56,20 @@ const Feynman = () => {
         <div className="feynman-container">
             <h1>Feynman Technique</h1>
             <div className="input-group">
-                <label htmlFor="subject">Subject:</label>
+                <label htmlFor="subject"></label>
                 <input
                     id="subject"
                     type="text"
-                    placeholder="Enter the subject you want to learn"
+                    placeholder="Please enter a subject/topic"
                     value={subject}
                     onChange={handleSubjectChange}
                 />
             </div>
             <div className="input-group">
-                <label htmlFor="explanation">Explanation:</label>
+                <label htmlFor="explanation"></label>
                 <textarea
                     id="explanation"
-                    placeholder="Explain the concept as if you were teaching it to someone else"
+                    placeholder="Provide an explanation of the concept as if you were explaining it to a child"
                     value={explanation}
                     onChange={handleExplanationChange}
                 />
@@ -84,7 +84,7 @@ const Feynman = () => {
             )}
 
             {feedback && <div className="feedback-section">
-                <h2>Feedback:</h2>
+                <h2>Feedback</h2>
                 <p>{typedFeedback}</p>
             </div>}
         </div>
