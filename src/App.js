@@ -9,7 +9,7 @@ import Binauralbeats from "./components/Binuralbeats";
 
 function App() {
   return (
-    <Router basename="/studybox">
+    <Router>
       <div className="App">
         <div className="header">
           <Link to="/" className="title-link">
