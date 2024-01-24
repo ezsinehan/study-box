@@ -1,4 +1,4 @@
-# STUDYBOX
+# Studybox
 ## Project Description
 Welcome to the Studybox Website Repository!
 
