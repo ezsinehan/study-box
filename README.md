@@ -2,7 +2,9 @@
 ## Project Description
 Welcome to the Studybox Website Repository!
 
-## 🎓 About Studybox: Studybox is an innovative website that offers six unique study tools designed to enhance your learning experience. With a focus on minimalistic style and distraction-free interface, Studybox aims to optimize your study sessions through effective cognitive techniques. The tools included are Feynman, Flashcards, Pomodoro, SecondBrain, and Binaural Beats.
+## 🎓 About Studybox: 
+
+Studybox is an interactive tool that offers six unique study tools designed to enhance your learning experience. With a focus on minimalistic style and distraction-free interface, Studybox aims to optimize your study sessions through effective cognitive techniques. The tools included are Feynman, Flashcards, Pomodoro, SecondBrain, and Binaural Beats.
 
 ## 🌟 Key Features:
 
@@ -21,7 +23,7 @@ Binaural Beats: Uses sound frequencies to potentially induce altered states of c
 
 ## 📁 How to Use:
 
-Visit the Studybox website to access all tools.
+Visit the [Studybox website](https://studybox.sinehan.dev/) to access all tools.
 Select a study technique from the interactive cube interface.
 Follow the instructions for each tool to maximize your study efficiency.
 
@@ -32,7 +34,7 @@ Components Folder: Contains individual components for each study tool.
 Utils Folder: Utility functions and data for the tools.
 Styles Folder: CSS files for styling the website's minimalistic design.
 
-## 🔗 Repository Link: Studybox on GitHub
+## 🔗 Repository Link: Studybox on [Github](https://github.com/ezsinehan/study-box).
 
 Embark on a journey of efficient and effective learning with Studybox - your gateway to mastering the art of studying!
 
