@@ -24,6 +24,15 @@ function App() {
           <Route path="/secondbrain" element={<Secondbrain />} />
           <Route path="/binauralbeats" element={<Binauralbeats />} />
         </Routes>
+        <footer className="footer">
+          <a
+            href="https://github.com/ezsinehan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit our GitHub
+          </a>
+        </footer>
       </div>
     </Router>
   );
