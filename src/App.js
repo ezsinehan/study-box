@@ -26,7 +26,7 @@ function App() {
         </Routes>
         <footer className="footer">
           <a
-            href="https://github.com/ezsinehan"
+            href="https://github.com/ezsinehan/study-box"
             target="_blank"
             rel="noopener noreferrer"
           >
