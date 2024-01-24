@@ -1,4 +1,39 @@
-# Getting Started with Create React App
+## STUDYBOX
+Project Description
+Welcome to the Studybox Website Repository!
+
+🎓 About Studybox: Studybox is an innovative website that offers six unique study tools designed to enhance your learning experience. With a focus on minimalistic style and distraction-free interface, Studybox aims to optimize your study sessions through effective cognitive techniques. The tools included are Feynman, Flashcards, Pomodoro, SecondBrain, and Binaural Beats.
+
+🌟 Key Features:
+
+Diverse Learning Tools: Engage with a variety of study methods, each tailored for different aspects of learning.
+Minimalistic Design: Enjoy a clean, distraction-free interface that keeps you focused on your studies.
+Cognitive Techniques: Utilize proven cognitive techniques to enhance your learning and retention skills.
+Interactive Experience: Each tool offers an interactive and intuitive experience, ensuring a seamless study session.
+🛠️ Tools Description:
+
+Studybox: Employs cognitive structuring for efficient categorization and retrieval of academic resources.
+Feynman Technique: Simplifies complex subjects into fundamental principles for better understanding.
+Flashcards: Leverages active recall and spaced repetition for improved memory retention.
+Pomodoro Technique: Uses fixed interval scheduling for optimized cognitive performance and time management.
+Second Brain: Acts as a digital information management system for efficient information retrieval and mental clarity.
+Binaural Beats: Uses sound frequencies to potentially induce altered states of consciousness.
+📁 How to Use:
+
+Visit the Studybox website to access all tools.
+Select a study technique from the interactive cube interface.
+Follow the instructions for each tool to maximize your study efficiency.
+👩‍💻 Project Structure:
+
+App.js: The main component rendering the interactive cube and routes.
+Components Folder: Contains individual components for each study tool.
+Utils Folder: Utility functions and data for the tools.
+Styles Folder: CSS files for styling the website's minimalistic design.
+🔗 Repository Link: Studybox on GitHub
+
+Embark on a journey of efficient and effective learning with Studybox - your gateway to mastering the art of studying!
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
